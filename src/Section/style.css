@@ -8,9 +8,18 @@
   .section__title {
     padding: 20px;
     margin: 0;
-    border-bottom: 2px solid #f1f1f1;
   }
-  
+
+  .section__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 20px;
+    border-bottom: 2px solid #f1f1f1;
+    padding: 0 20px;
+  }
+
   @media (max-width: 767px) {
     .section__header {
       grid-template-columns: 1fr;
