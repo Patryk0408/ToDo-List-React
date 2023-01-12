@@ -1,0 +1,29 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .buttons__button {
+    background-color: transparent;
+    border: none;
+    color: teal;
+    transition: 0.3s;
+    margin: 0 0 0 20px;
+  }
+  
+  .buttons__button:hover {
+    color: hsl(180, 100%, 35%);
+    cursor: pointer;
+  }
+  
+  .buttons__button:disabled {
+    color: rgb(172, 172, 172);
+    cursor: not-allowed;
+  }
+
+  @media (max-width: 767px) {
+    .buttons__button {
+      flex-basis: 100%;
+      margin: 20px;
+    }
+  }
