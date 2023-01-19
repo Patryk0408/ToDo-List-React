@@ -15,7 +15,14 @@
     color: #FFF;
     border: none;
     padding: 8px;
+    transition: background 0.5s, transform 1s;
 }
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 35%);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 
 @media (max-width: 767px) {
     .form {
