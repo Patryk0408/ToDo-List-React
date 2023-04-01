@@ -1,11 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const onDelete = (name) => {
-  console.log(`Nazwa zadania do usunięcia: ${name}`)
-}
-
-const Tasks = ({tasks, hideDone}) => (
+const Tasks = ({tasks, hideDone, removeTask}) => (
   <ul className="tasks">
     {tasks.map(task => (
       <li key={task.id}
@@ -21,7 +17,7 @@ const Tasks = ({tasks, hideDone}) => (
           </span>
         <button 
           className="tasks__button--remove"
-          onClick={() => onDelete(task.content)}>
+          onClick={() => removeTask(task.id)}>
           <span>
             🗑
           </span>
