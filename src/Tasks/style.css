@@ -2,7 +2,6 @@
     padding: 0px;
     margin: 0;
     word-break: break-word;
-    min-height: 79px;
   }
   
   .tasks__item--done {
