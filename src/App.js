@@ -16,7 +16,7 @@ function App() {
 
   function getTasksFromLocalStorage() {
     const storedTasks = JSON.parse(localStorage.getItem("tasks"));
-    return storedTasks;
+    return storedTasks || [];
   };
 
   const toggleHideDone = () => {
