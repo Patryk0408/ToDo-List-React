@@ -1,10 +1,10 @@
 import { useState } from "react";
-import "./style.css";
+import { FormContainer, Input, Button } from "./styled.js"
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
     
-    const onFormSubmit = (event, content) => {
+    const onFormSubmit = (event) => {
         event.preventDefault();
 
         const trimmedTaskContent = newTaskContent.trim();
@@ -17,15 +17,14 @@ const Form = ({ addNewTask }) => {
     };
 
     return (
-    <form className="form" onSubmit={onFormSubmit}>
-        <input
+    <FormContainer onSubmit={onFormSubmit}>
+        <Input
             value={newTaskContent}
-            className="form__input" 
             placeholder="Co jest do zrobienia?"
             onChange={({target}) => setNewTaskContent(target.value)}
         />
-        <button className="form__button">Dodaj zadanie</button>
-    </form>
+        <Button>Dodaj zadanie</Button>
+    </FormContainer>
     )
 };
 
