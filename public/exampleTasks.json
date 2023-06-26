@@ -1,0 +1,17 @@
+{
+  "tasks": {
+    "tasks": [
+      {
+        "content": "Zobaczyć film",
+        "done": false,
+        "id": "btzMxEcjL4SLFF9p98L3K"
+      },
+      {
+        "content": "Nauczyć się Reduxa",
+        "done": false,
+        "id": "pqXysEf3E1uyhJM-1EeIx"
+      }
+    ],
+    "hideDone": false
+  }
+}
