@@ -46,7 +46,10 @@ export const {
 
 export const selectTasks = (state) => state.tasks;
 
+// wcześniej nie było selectedTasks a w getTaskById była funkcja selectTasks
+export const selectedTasks = (state) => state.tasks.tasks;
+
 export const getTaskById = (state, taskId) =>
-  selectTasks(state).find(({ id }) => id === taskId);
+  selectedTasks(state).find(({ id }) => id === taskId);
 
 export default tasksSlice.reducer;

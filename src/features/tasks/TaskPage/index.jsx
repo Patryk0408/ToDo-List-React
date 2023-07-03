@@ -12,7 +12,7 @@ function TaskPage() {
   return (
     <Container>
       <Header title="Szczegóły zadania" />
-      <Section title={task} body={<>nanan</>} />
+      <Section title={task.content} body={<>nanan</>} />
     </Container>
   );
 }
