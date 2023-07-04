@@ -4,6 +4,7 @@ import Container from "../../../common/Container";
 import { useParams } from "react-router-dom/cjs/react-router-dom";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
+import { Wrapper } from "./styled";
 
 function TaskPage() {
   const { id } = useParams();
@@ -12,7 +13,18 @@ function TaskPage() {
   return (
     <Container>
       <Header title="Szczegóły zadania" />
-      <Section title={task.content} body={<>nanan</>} />
+      <Section
+        title={task ? task.content : "Nie znaleziono zadania 😢"}
+        body={
+          task ? (
+            <>
+              <Wrapper>
+                <strong>Ukończono:</strong> {task.done ? "tak" : "nie"}
+              </Wrapper>
+            </>
+          ) : null
+        }
+      />
     </Container>
   );
 }

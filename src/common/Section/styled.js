@@ -18,7 +18,7 @@ export const SectionHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   grid-gap: 20px;
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 2px solid ${({ theme }) => theme.color.Seashell};
   padding: 0 20px;
 
   @media (max-width: 767px) {

@@ -11,13 +11,8 @@ export const FormContainer = styled.form`
   }
 `;
 
-export const Input = styled.input`
-  max-width: 100%;
-  padding: 8px;
-`;
-
 export const Button = styled.button`
-  background-color: teal;
+  background-color: ${({ theme }) => theme.color.teal};
   color: #fff;
   border: none;
   padding: 8px;

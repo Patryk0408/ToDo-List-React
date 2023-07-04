@@ -1,6 +1,6 @@
+import { StyledNavLink, ListElement, UnOrderList } from "./styled";
 import {
   HashRouter,
-  NavLink,
   Switch,
   Route,
   Redirect,
@@ -12,18 +12,14 @@ import TaskPage from "./features/tasks/TaskPage";
 export const App = () => (
   <HashRouter>
     <nav>
-      <ul>
-        <li>
-          <NavLink activeClassName="active" to="/zadania">
-            Zadania
-          </NavLink>
-        </li>
-        <li>
-          <NavLink activeClassName="active" to="/autor">
-            O autorze
-          </NavLink>
-        </li>
-      </ul>
+      <UnOrderList>
+        <ListElement>
+          <StyledNavLink to="/zadania">Zadania</StyledNavLink>
+        </ListElement>
+        <ListElement>
+          <StyledNavLink to="/autor">O autorze</StyledNavLink>
+        </ListElement>
+      </UnOrderList>
       <Switch>
         <Route path="/zadania/:id">
           <TaskPage />
