@@ -7,7 +7,7 @@ import {
   selectTasksByQuery,
 } from "../../tasksSlice";
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
-import searchQueryParam from "../searchQueryParamName.js";
+import searchQueryParam from "../../searchQueryParamName.js";
 
 const TaskList = () => {
   const location = useLocation();
