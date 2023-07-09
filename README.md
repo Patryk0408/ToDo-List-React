@@ -12,7 +12,10 @@ This's simple to do list encoded only in Javascript, HTML and CSS.
 
 - HTML, CSS
 - Javascript
-- BEM
+- React
+- React Saga
+- React Router
+- Styled-components
 
 # Getting Started with Create React App
 
