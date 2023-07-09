@@ -1,6 +1,6 @@
 # [ToDo-List-React.js](https://patryk0408.github.io/todo-list-react/)
 
-This's simple to do list encoded only in Javascript, HTML and CSS.
+This's simple to do list encoded in React.js 
 
 ## Description app:
 
