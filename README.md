@@ -1,4 +1,4 @@
-# [ToDo-List-React.js](https://patryk0408.github.io/todo-list-react/)
+# [ToDo-List-React.js](https://patryk0408.github.io/ToDo-List-React/)
 
 This's simple to do list encoded in React.js 
 
